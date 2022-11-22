@@ -1,0 +1,34 @@
+#mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    margin-top: 10%;
+    background-color: rgb(160, 160, 160);
+}
+
+#product {
+    display: grid;
+    text-align: center;
+  }
+
+#selectPeriod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chooseCredits {
+    background-color: royalblue;
+    display: grid;
+}
+
+#showCredit {
+    position: relative;
+    background-color: seagreen;
+}
+
+.credits {
+    position: absolute;
+    right: 0;
+}
