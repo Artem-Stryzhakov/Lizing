@@ -4,31 +4,77 @@
     align-items: center;
     gap: 20%;
     margin-top: 10%;
-    background-color: rgb(160, 160, 160);
 }
 
 #product {
-    display: grid;
+    display: flex;
     text-align: center;
-  }
+    align-items: center;
+    gap: 10px;
+}
+
+#productName {
+    position: absolute;
+    font-weight: bold;
+    font-size: 22px;
+    left: 21.5%;
+    top:15%;
+    max-width: 40%
+}
+
+#price {
+    font-size: 25px;
+}
+
+#customRange2 {
+    width: 70%;
+    color: darkcyan;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#lbl {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#period {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 #selectPeriod {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    text-align: center;
 }
 
 #chooseCredits {
-    background-color: royalblue;
+    background-color: rgb(224, 224, 224);
     display: grid;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(245, 245, 245);
+    width: 20%;
+    border-radius: 8px;
 }
 
 #showCredit {
-    position: relative;
-    background-color: seagreen;
+    display: flex;
+    gap: 50%;
 }
 
-.credits {
-    position: absolute;
-    right: 0;
+#displayCredits {
+    display: grid;
+    font-weight: bold;
+}
+
+#banks {
+    font-weight: bold;
+}
+
+.card {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-radius: 0px;
 }
