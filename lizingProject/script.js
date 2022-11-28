@@ -18,6 +18,7 @@ const bankData = {
     interestRate: [0.089, 0.099, 0.076, 0.121] /*Interest rate is just a test value, it might be different...Values in percent are [8.9%, 9,9%, 7,6%, 12,1%]*/,
     months: [6, 10, 12, 18, 24, 36, 48],
 
+    // Need to make some changes here...
     solveCreditFunctions: {
         solveTFBankCredit(months) {
             return ((price / months) + (price * bankData.interestRate[0] / 12)).toFixed(1)
