@@ -35,9 +35,8 @@ const bankData = {
 }
 
 rangeDisplay.addEventListener("change", (event) => {
-    const indexRange = event.target.value;
+    const indexRange = event.target.value
     months = bankData.months[indexRange]
-    labelDisplay.innerHTML = indexRange;
 
     labelDisplay.innerHTML = `${bankData.months[indexRange]} months`
     displayCredit()
