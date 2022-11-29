@@ -1,9 +1,34 @@
-#mainContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20%;
-    margin-top: 10%;
+@media screen and (max-width: 900px) {
+    #mainContent {
+        display: grid;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #chooseCredits {
+        display: grid;
+        padding: 10px;
+        max-width: 540px;
+        border-radius: 8px;
+    }
+}
+@media screen and (min-width: 899px) {
+    #mainContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15%;
+        margin-top: 10%;
+    }
+
+    #chooseCredits {
+        background-color: rgb(250, 250, 250);
+        display: grid;
+        padding: 10px;
+        width: 450px;
+        border-radius: 8px;
+    }
 }
 
 #product {
@@ -18,7 +43,7 @@
     font-weight: bold;
     font-size: 22px;
     left: 21.5%;
-    top:15%;
+    top: 15%;
     max-width: 40%
 }
 
@@ -28,8 +53,6 @@
 
 #customRange2 {
     width: 70%;
-    color: darkcyan;
-    background-color: white;
     border-radius: 5px;
 }
 
@@ -49,15 +72,6 @@
     text-align: center;
 }
 
-#chooseCredits {
-    background-color: rgb(224, 224, 224);
-    display: grid;
-    padding: 10px;
-    box-shadow: 2px 2px 2px 2px rgb(245, 245, 245);
-    width: 20%;
-    border-radius: 8px;
-}
-
 #showCredit {
     display: flex;
     gap: 50%;
@@ -72,9 +86,15 @@
     font-weight: bold;
 }
 
-.card {
-    position: fixed;
+footer {
+    position: absolute;
     width: 100%;
     bottom: 0;
+    height: 30px;
     border-radius: 0px;
+    border-top: 1px solid;
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    max-height: 100px;
 }
+

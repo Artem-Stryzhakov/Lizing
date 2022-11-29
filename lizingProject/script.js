@@ -37,3 +37,4 @@ const displayCredit = () => arrayOfBanks.forEach((banks, index) =>
 
 displayCredit()
 labelDisplay.innerHTML = `${bankData.months[3]} months`
+
