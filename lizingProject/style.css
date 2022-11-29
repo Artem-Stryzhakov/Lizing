@@ -1,33 +1,35 @@
+#mainContent {
+    align-items: center;
+    justify-content: center;
+}
+
+#chooseCredits {
+    padding: 10px;
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 900px) {
     #mainContent {
         display: grid;
         margin-top: 20px;
-        align-items: center;
-        justify-content: center;
     }
 
     #chooseCredits {
         display: grid;
-        padding: 10px;
-        max-width: 540px;
-        border-radius: 8px;
+        max-width: 450px;
     }
 }
 @media screen and (min-width: 899px) {
     #mainContent {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15%;
+        gap: 10%;
         margin-top: 10%;
     }
 
     #chooseCredits {
         background-color: rgb(250, 250, 250);
         display: grid;
-        padding: 10px;
         width: 450px;
-        border-radius: 8px;
     }
 }
 
