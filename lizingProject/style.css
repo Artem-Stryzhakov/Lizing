@@ -6,6 +6,7 @@
 #chooseCredits {
     padding: 10px;
     border-radius: 8px;
+    background-color: rgb(245, 245, 245);
 }
 
 @media screen and (max-width: 900px) {
@@ -17,6 +18,7 @@
     #chooseCredits {
         display: grid;
         max-width: 450px;
+        margin-top: 10px;
     }
 }
 @media screen and (min-width: 899px) {
@@ -27,10 +29,37 @@
     }
 
     #chooseCredits {
-        background-color: rgb(250, 250, 250);
         display: grid;
         width: 450px;
     }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
 }
 
 #product {
@@ -47,6 +76,10 @@
     left: 21.5%;
     top: 15%;
     max-width: 40%
+}
+
+#phoneInfo {
+    font-size: 20px;
 }
 
 #price {
@@ -66,7 +99,15 @@
 #period {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
+}
+
+#creditSelect {
+    width: 110px;
+    height: 25px;
+    text-align: center;
+    font-size: 15px;
 }
 
 #selectPeriod {
@@ -76,27 +117,37 @@
 
 #showCredit {
     display: flex;
+    justify-content: center;
     gap: 50%;
 }
 
 #displayCredits {
     display: grid;
     font-weight: bold;
+    margin-top: 15px;
 }
 
 #banks {
     font-weight: bold;
 }
 
-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    height: 30px;
-    border-radius: 0px;
-    border-top: 1px solid;
-    font-family: "Comic Sans MS";
-    font-size: 20px;
-    max-height: 100px;
+@media screen and (min-width: 500px){
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+        border-radius: 0px;
+        border-top: 1px solid;
+        font-family: "Comic Sans MS";
+        font-size: 20px;
+        max-height: 100px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    footer {
+        visibility: hidden;
+    }
 }
 
